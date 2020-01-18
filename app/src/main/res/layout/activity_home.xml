@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/div_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#333333">
+
+        <ImageView
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:src="@mipmap/ic_allegra_foreground"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allegra"
+            android:textSize="28dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:padding="24dp"
+        android:layout_marginTop="250dp"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search_white_28dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEARCH LYRICS"
+                android:textSize="20dp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="match_parent"
+            android:hint="Search Artists and Songs..."
+            android:background="@android:color/white"
+            android:layout_height="40dp"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:background="#107E6F"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/api"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:text="d5f0d9OX0Bn95JbZwSD0Ja5x1mMlJb4B6qAcZFCkhQT8hoKXDQlGxefY" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
